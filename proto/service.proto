@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+service KeepAliveService {
+  rpc KeepAlive(Empty) returns (Empty) {}
+}
+
+message Empty {}
+
