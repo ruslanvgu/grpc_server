@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+package package;
+
 service KeepAliveService {
   rpc KeepAlive(Empty) returns (Empty) {}
 }

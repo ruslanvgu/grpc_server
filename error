@@ -1,0 +1,190 @@
+CMakeFiles/grpc_server.dir/main.cpp.o: warning: relocation against `_ZN4grpc6Status2OKE' in read-only section `.text._ZN20KeepAliveServiceImpl9KeepAliveEPN4grpc13ServerContextEPKN7package5EmptyEPS4_[_ZN20KeepAliveServiceImpl9KeepAliveEPN4grpc13ServerContextEPKN7package5EmptyEPS4_]'
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «package::Empty::Empty(package::Empty const&)»:
+service.pb.cc:(.text+0xad): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::~ZeroFieldsBase()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «package::Empty::GetMetadata() const»:
+service.pb.cc:(.text+0x107): неопределённая ссылка на «google::protobuf::internal::AssignDescriptors(google::protobuf::internal::DescriptorTable const* (*)(), absl::once_flag*, google::protobuf::Metadata const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «__static_initialization_and_destruction_0(int, int)»:
+service.pb.cc:(.text+0x1d6): неопределённая ссылка на «google::protobuf::internal::AddDescriptorsRunner::AddDescriptorsRunner(google::protobuf::internal::DescriptorTable const*)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «absl::log_internal::LogMessage::operator<<(unsigned long)»:
+service.pb.cc:(.text._ZN4absl12log_internal10LogMessagelsEm[_ZN4absl12log_internal10LogMessagelsEm]+0x23): неопределённая ссылка на «absl::log_internal::LogMessage& absl::log_internal::LogMessage::operator<< <unsigned long, 0>(unsigned long const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::internal::ArenaAlignAs(unsigned long)»:
+service.pb.cc:(.text._ZN6google8protobuf8internal12ArenaAlignAsEm[_ZN6google8protobuf8internal12ArenaAlignAsEm]+0x8b): неопределённая ссылка на «absl::log_internal::LogMessageFatal::LogMessageFatal(char const*, int, std::basic_string_view<char, std::char_traits<char> >)»
+/usr/bin/ld: service.pb.cc:(.text._ZN6google8protobuf8internal12ArenaAlignAsEm[_ZN6google8protobuf8internal12ArenaAlignAsEm]+0xa3): неопределённая ссылка на «absl::log_internal::LogMessageFatal::~LogMessageFatal()»
+/usr/bin/ld: service.pb.cc:(.text._ZN6google8protobuf8internal12ArenaAlignAsEm[_ZN6google8protobuf8internal12ArenaAlignAsEm]+0xff): неопределённая ссылка на «absl::log_internal::LogMessageFatal::LogMessageFatal(char const*, int, std::basic_string_view<char, std::char_traits<char> >)»
+/usr/bin/ld: service.pb.cc:(.text._ZN6google8protobuf8internal12ArenaAlignAsEm[_ZN6google8protobuf8internal12ArenaAlignAsEm]+0x159): неопределённая ссылка на «absl::log_internal::LogMessageFatal::~LogMessageFatal()»
+/usr/bin/ld: service.pb.cc:(.text._ZN6google8protobuf8internal12ArenaAlignAsEm[_ZN6google8protobuf8internal12ArenaAlignAsEm]+0x182): неопределённая ссылка на «absl::log_internal::LogMessageFatal::~LogMessageFatal()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::Arena::AllocateAligned(unsigned long, unsigned long)»:
+service.pb.cc:(.text._ZN6google8protobuf5Arena15AllocateAlignedEmm[_ZN6google8protobuf5Arena15AllocateAlignedEmm]+0x50): неопределённая ссылка на «google::protobuf::Arena::Allocate(unsigned long)»
+/usr/bin/ld: service.pb.cc:(.text._ZN6google8protobuf5Arena15AllocateAlignedEmm[_ZN6google8protobuf5Arena15AllocateAlignedEmm]+0x87): неопределённая ссылка на «google::protobuf::Arena::Allocate(unsigned long)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::MessageLite::MessageLite()»:
+service.pb.cc:(.text._ZN6google8protobuf11MessageLiteC2Ev[_ZN6google8protobuf11MessageLiteC5Ev]+0x13): неопределённая ссылка на «vtable for google::protobuf::MessageLite»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::MessageLite::MessageLite(google::protobuf::Arena*)»:
+service.pb.cc:(.text._ZN6google8protobuf11MessageLiteC2EPNS0_5ArenaE[_ZN6google8protobuf11MessageLiteC5EPNS0_5ArenaE]+0x17): неопределённая ссылка на «vtable for google::protobuf::MessageLite»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::Message::Message()»:
+service.pb.cc:(.text._ZN6google8protobuf7MessageC2Ev[_ZN6google8protobuf7MessageC5Ev]+0x1f): неопределённая ссылка на «vtable for google::protobuf::Message»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::Message::Message(google::protobuf::Arena*)»:
+service.pb.cc:(.text._ZN6google8protobuf7MessageC2EPNS0_5ArenaE[_ZN6google8protobuf7MessageC5EPNS0_5ArenaE]+0x2a): неопределённая ссылка на «vtable for google::protobuf::Message»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::internal::ZeroFieldsBase::ZeroFieldsBase()»:
+service.pb.cc:(.text._ZN6google8protobuf8internal14ZeroFieldsBaseC2Ev[_ZN6google8protobuf8internal14ZeroFieldsBaseC5Ev]+0x1f): неопределённая ссылка на «vtable for google::protobuf::internal::ZeroFieldsBase»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «google::protobuf::internal::ZeroFieldsBase::ZeroFieldsBase(google::protobuf::Arena*)»:
+service.pb.cc:(.text._ZN6google8protobuf8internal14ZeroFieldsBaseC2EPNS0_5ArenaE[_ZN6google8protobuf8internal14ZeroFieldsBaseC5EPNS0_5ArenaE]+0x2a): неопределённая ссылка на «vtable for google::protobuf::internal::ZeroFieldsBase»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro+0x0): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::CopyImpl(google::protobuf::Message&, google::protobuf::Message const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro+0x8): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::MergeImpl(google::protobuf::Message&, google::protobuf::Message const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* absl::log_internal::MakeCheckOpString<unsigned long const&, unsigned int const&>(unsigned long const&, unsigned int const&, char const*)»:
+service.pb.cc:(.text._ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc[_ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc]+0x49): неопределённая ссылка на «absl::log_internal::CheckOpMessageBuilder::CheckOpMessageBuilder(char const*)»
+/usr/bin/ld: service.pb.cc:(.text._ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc[_ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc]+0x7c): неопределённая ссылка на «absl::log_internal::CheckOpMessageBuilder::ForVar2()»
+/usr/bin/ld: service.pb.cc:(.text._ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc[_ZN4absl12log_internal17MakeCheckOpStringIRKmRKjEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEET_T0_PKc]+0xa0): неопределённая ссылка на «absl::log_internal::CheckOpMessageBuilder::NewString[abi:cxx11]()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «absl::log_internal::LogMessage& absl::log_internal::LogMessage::operator<< <19>(char const (&) [19])»:
+service.pb.cc:(.text._ZN4absl12log_internal10LogMessagelsILi19EEERS1_RAT__Kc[_ZN4absl12log_internal10LogMessagelsILi19EEERS1_RAT__Kc]+0x49): неопределённая ссылка на «void absl::log_internal::LogMessage::CopyToEncodedBuffer<(absl::log_internal::LogMessage::StringType)0>(std::basic_string_view<char, std::char_traits<char> >)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «void google::protobuf::internal::InternalMetadata::MergeFrom<google::protobuf::UnknownFieldSet>(google::protobuf::internal::InternalMetadata const&)»:
+service.pb.cc:(.text._ZN6google8protobuf8internal16InternalMetadata9MergeFromINS0_15UnknownFieldSetEEEvRKS2_[_ZN6google8protobuf8internal16InternalMetadata9MergeFromINS0_15UnknownFieldSetEEEvRKS2_]+0x43): неопределённая ссылка на «void google::protobuf::internal::InternalMetadata::DoMergeFrom<google::protobuf::UnknownFieldSet>(google::protobuf::UnknownFieldSet const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x20): неопределённая ссылка на «google::protobuf::Message::GetTypeName[abi:cxx11]() const»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x30): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::Clear()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x40): неопределённая ссылка на «google::protobuf::Message::InitializationErrorString[abi:cxx11]() const»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x48): неопределённая ссылка на «google::protobuf::Message::CheckTypeAndMergeFrom(google::protobuf::MessageLite const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x50): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::ByteSizeLong() const»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x60): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::_InternalParse(char const*, google::protobuf::internal::ParseContext*)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x70): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::_InternalSerialize(unsigned char*, google::protobuf::io::EpsCopyOutputStream*) const»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x78): неопределённая ссылка на «google::protobuf::Message::MergeFrom(google::protobuf::Message const&)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTVN7package5EmptyE[_ZTVN7package5EmptyE]+0x80): неопределённая ссылка на «google::protobuf::Message::SpaceUsedLong() const»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o: в функции «package::Empty::~Empty()»:
+service.pb.cc:(.text._ZN7package5EmptyD2Ev[_ZN7package5EmptyD5Ev]+0x26): неопределённая ссылка на «google::protobuf::internal::ZeroFieldsBase::~ZeroFieldsBase()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/service.pb.cc.o:(.data.rel.ro._ZTIN7package5EmptyE[_ZTIN7package5EmptyE]+0x10): неопределённая ссылка на «typeinfo for google::protobuf::internal::ZeroFieldsBase»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «TLS wrapper function for absl::cord_internal::cordz_next_sample»:
+service.grpc.pb.cc:(.text._ZTWN4absl13cord_internal17cordz_next_sampleE[_ZTWN4absl13cord_internal17cordz_next_sampleE]+0x25): неопределённая ссылка на «absl::cord_internal::cordz_next_sample»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «absl::cord_internal::cordz_should_profile()»:
+service.grpc.pb.cc:(.text._ZN4absl13cord_internal20cordz_should_profileEv[_ZN4absl13cord_internal20cordz_should_profileEv]+0x3b): неопределённая ссылка на «absl::cord_internal::cordz_should_profile_slow()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «absl::Cord::~Cord()»:
+service.grpc.pb.cc:(.text._ZN4absl4CordD2Ev[_ZN4absl4CordD5Ev]+0x28): неопределённая ссылка на «absl::Cord::DestroyCordSlow()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «absl::Cord::InlineRep::EmplaceTree(absl::cord_internal::CordRep*, absl::cord_internal::CordzUpdateTracker::MethodIdentifier)»:
+service.grpc.pb.cc:(.text._ZN4absl4Cord9InlineRep11EmplaceTreeEPNS_13cord_internal7CordRepENS2_18CordzUpdateTracker16MethodIdentifierE[_ZN4absl4Cord9InlineRep11EmplaceTreeEPNS_13cord_internal7CordRepENS2_18CordzUpdateTracker16MethodIdentifierE]+0x86): неопределённая ссылка на «absl::cord_internal::CordzInfo::TrackCord(absl::cord_internal::InlineData&, absl::cord_internal::CordzUpdateTracker::MethodIdentifier)»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «google::protobuf::io::ZeroCopyInputStream::ZeroCopyInputStream()»:
+service.grpc.pb.cc:(.text._ZN6google8protobuf2io19ZeroCopyInputStreamC2Ev[_ZN6google8protobuf2io19ZeroCopyInputStreamC5Ev]+0xf): неопределённая ссылка на «vtable for google::protobuf::io::ZeroCopyInputStream»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «google::protobuf::io::ZeroCopyInputStream::~ZeroCopyInputStream()»:
+service.grpc.pb.cc:(.text._ZN6google8protobuf2io19ZeroCopyInputStreamD2Ev[_ZN6google8protobuf2io19ZeroCopyInputStreamD5Ev]+0xf): неопределённая ссылка на «vtable for google::protobuf::io::ZeroCopyInputStream»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «google::protobuf::io::ZeroCopyOutputStream::ZeroCopyOutputStream()»:
+service.grpc.pb.cc:(.text._ZN6google8protobuf2io20ZeroCopyOutputStreamC2Ev[_ZN6google8protobuf2io20ZeroCopyOutputStreamC5Ev]+0xf): неопределённая ссылка на «vtable for google::protobuf::io::ZeroCopyOutputStream»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «google::protobuf::io::ZeroCopyOutputStream::~ZeroCopyOutputStream()»:
+service.grpc.pb.cc:(.text._ZN6google8protobuf2io20ZeroCopyOutputStreamD2Ev[_ZN6google8protobuf2io20ZeroCopyOutputStreamD5Ev]+0xf): неопределённая ссылка на «vtable for google::protobuf::io::ZeroCopyOutputStream»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::Slice::~Slice()»:
+service.grpc.pb.cc:(.text._ZN4grpc5SliceD2Ev[_ZN4grpc5SliceD5Ev]+0x20): неопределённая ссылка на «grpc_slice_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::Slice::Slice(unsigned long)»:
+service.grpc.pb.cc:(.text._ZN4grpc5SliceC2Em[_ZN4grpc5SliceC5Em]+0x32): неопределённая ссылка на «grpc_slice_malloc»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::SliceReferencingString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»:
+service.grpc.pb.cc:(.text._ZN4grpc22SliceReferencingStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4grpc22SliceReferencingStringERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x50): неопределённая ссылка на «grpc_slice_from_static_buffer»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ByteBuffer::ByteBuffer(grpc::Slice const*, unsigned long)»:
+service.grpc.pb.cc:(.text._ZN4grpc10ByteBufferC2EPKNS_5SliceEm[_ZN4grpc10ByteBufferC5EPKNS_5SliceEm]+0x27): неопределённая ссылка на «grpc_raw_byte_buffer_create»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ByteBuffer::~ByteBuffer()»:
+service.grpc.pb.cc:(.text._ZN4grpc10ByteBufferD2Ev[_ZN4grpc10ByteBufferD5Ev]+0x27): неопределённая ссылка на «grpc_byte_buffer_destroy»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ByteBuffer::Clear()»:
+service.grpc.pb.cc:(.text._ZN4grpc10ByteBuffer5ClearEv[_ZN4grpc10ByteBuffer5ClearEv]+0x27): неопределённая ссылка на «grpc_byte_buffer_destroy»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ByteBuffer::Duplicate()»:
+service.grpc.pb.cc:(.text._ZN4grpc10ByteBuffer9DuplicateEv[_ZN4grpc10ByteBuffer9DuplicateEv]+0x1b): неопределённая ссылка на «grpc_byte_buffer_copy»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::MethodHandler::Deserialize(grpc_call*, grpc_byte_buffer*, grpc::Status*, void**)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal13MethodHandler11DeserializeEP9grpc_callP16grpc_byte_bufferPNS_6StatusEPPv[_ZN4grpc8internal13MethodHandler11DeserializeEP9grpc_callP16grpc_byte_bufferPNS_6StatusEPPv]+0x4a): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::experimental::ClientRpcInfo::RunInterceptor(grpc::experimental::InterceptorBatchMethods*, unsigned long)»:
+service.grpc.pb.cc:(.text._ZN4grpc12experimental13ClientRpcInfo14RunInterceptorEPNS0_23InterceptorBatchMethodsEm[_ZN4grpc12experimental13ClientRpcInfo14RunInterceptorEPNS0_23InterceptorBatchMethodsEm]+0x56): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::GrpcLibrary::GrpcLibrary(bool)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal11GrpcLibraryC2Eb[_ZN4grpc8internal11GrpcLibraryC5Eb]+0x32): неопределённая ссылка на «grpc_init»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::GrpcLibrary::~GrpcLibrary()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal11GrpcLibraryD2Ev[_ZN4grpc8internal11GrpcLibraryD5Ev]+0x2b): неопределённая ссылка на «grpc_shutdown»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::CompletionQueue::~CompletionQueue()»:
+service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueueD2Ev[_ZN4grpc15CompletionQueueD5Ev]+0x2a): неопределённая ссылка на «grpc_completion_queue_destroy»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueueD2Ev[_ZN4grpc15CompletionQueueD5Ev]+0x4a): неопределённая ссылка на «absl::Mutex::~Mutex()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::CompletionQueue::CompletionQueue(grpc_completion_queue_attributes const&)»:
+service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueueC2ERK32grpc_completion_queue_attributes[_ZN4grpc15CompletionQueueC5ERK32grpc_completion_queue_attributes]+0x5c): неопределённая ссылка на «grpc_completion_queue_factory_lookup»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueueC2ERK32grpc_completion_queue_attributes[_ZN4grpc15CompletionQueueC5ERK32grpc_completion_queue_attributes]+0x73): неопределённая ссылка на «grpc_completion_queue_create»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueueC2ERK32grpc_completion_queue_attributes[_ZN4grpc15CompletionQueueC5ERK32grpc_completion_queue_attributes]+0xb0): неопределённая ссылка на «absl::Mutex::~Mutex()»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::CompletionQueue::Pluck(grpc::internal::CompletionQueueTag*)»:
+service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE[_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE]+0x29): неопределённая ссылка на «gpr_inf_future»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE[_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE]+0x56): неопределённая ссылка на «grpc_completion_queue_pluck»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE[_ZN4grpc15CompletionQueue5PluckEPNS_8internal18CompletionQueueTagE]+0xc9): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::CompletionQueue::CompleteAvalanching()»:
+service.grpc.pb.cc:(.text._ZN4grpc15CompletionQueue19CompleteAvalanchingEv[_ZN4grpc15CompletionQueue19CompleteAvalanchingEv]+0x3e): неопределённая ссылка на «grpc_completion_queue_shutdown»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::experimental::ServerRpcInfo::RunInterceptor(grpc::experimental::InterceptorBatchMethods*, unsigned long)»:
+service.grpc.pb.cc:(.text._ZN4grpc12experimental13ServerRpcInfo14RunInterceptorEPNS0_23InterceptorBatchMethodsEm[_ZN4grpc12experimental13ServerRpcInfo14RunInterceptorEPNS0_23InterceptorBatchMethodsEm]+0x56): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::InterceptorBatchMethodsImpl::Proceed()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal27InterceptorBatchMethodsImpl7ProceedEv[_ZN4grpc8internal27InterceptorBatchMethodsImpl7ProceedEv]+0x75): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::InterceptorBatchMethodsImpl::Hijack()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal27InterceptorBatchMethodsImpl6HijackEv[_ZN4grpc8internal27InterceptorBatchMethodsImpl6HijackEv]+0x97): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal27InterceptorBatchMethodsImpl6HijackEv[_ZN4grpc8internal27InterceptorBatchMethodsImpl6HijackEv]+0xc5): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::InterceptorBatchMethodsImpl::GetSerializedSendMessage()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal27InterceptorBatchMethodsImpl24GetSerializedSendMessageEv[_ZN4grpc8internal27InterceptorBatchMethodsImpl24GetSerializedSendMessageEv]+0x50): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o:service.grpc.pb.cc:(.text._ZN4grpc8internal27InterceptorBatchMethodsImpl24GetSerializedSendMessageEv[_ZN4grpc8internal27InterceptorBatchMethodsImpl24GetSerializedSendMessageEv]+0xc8): далее есть ещё неопределённые ссылки на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::FillMetadataArray(std::multimap<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > const&, unsigned long*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_[_ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_]+0x8c): неопределённая ссылка на «gpr_malloc»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_[_ZN4grpc8internal17FillMetadataArrayERKSt8multimapINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_St4lessIS7_ESaISt4pairIKS7_S7_EEEPmRSB_]+0x1eb): неопределённая ссылка на «grpc_slice_from_static_buffer»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallOpSendInitialMetadata::FinishOp(bool*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal25CallOpSendInitialMetadata8FinishOpEPb[_ZN4grpc8internal25CallOpSendInitialMetadata8FinishOpEPb]+0x3a): неопределённая ссылка на «gpr_free»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallOpSendMessage::AddOp(grpc_op*, unsigned long*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm[_ZN4grpc8internal17CallOpSendMessage5AddOpEP7grpc_opPm]+0xf7): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallOpServerSendStatus::FinishOp(bool*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallOpServerSendStatus8FinishOpEPb[_ZN4grpc8internal22CallOpServerSendStatus8FinishOpEPb]+0x3a): неопределённая ссылка на «gpr_free»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallOpClientRecvStatus::ClientRecvStatus(grpc::ClientContext*, grpc::Status*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallOpClientRecvStatus16ClientRecvStatusEPNS_13ClientContextEPNS_6StatusE[_ZN4grpc8internal22CallOpClientRecvStatus16ClientRecvStatusEPNS_13ClientContextEPNS_6StatusE]+0x63): неопределённая ссылка на «grpc_empty_slice»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallOpClientRecvStatus::FinishOp(bool*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb[_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb]+0xcc): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb[_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb]+0x2db): неопределённая ссылка на «gpr_free»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb[_ZN4grpc8internal22CallOpClientRecvStatus8FinishOpEPb]+0x2f3): неопределённая ссылка на «grpc_slice_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithStatusTag::operator delete(void*, void*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal21CallbackWithStatusTagdlEPvS2_[_ZN4grpc8internal21CallbackWithStatusTagdlEPvS2_]+0x2e): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithStatusTag::CallbackWithStatusTag(grpc_call*, std::function<void (grpc::Status)>, grpc::internal::CompletionQueueTag*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal21CallbackWithStatusTagC2EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE[_ZN4grpc8internal21CallbackWithStatusTagC5EP9grpc_callSt8functionIFvNS_6StatusEEEPNS0_18CompletionQueueTagE]+0x6c): неопределённая ссылка на «grpc_call_ref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithStatusTag::Run(bool)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal21CallbackWithStatusTag3RunEb[_ZN4grpc8internal21CallbackWithStatusTag3RunEb]+0xbe): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal21CallbackWithStatusTag3RunEb[_ZN4grpc8internal21CallbackWithStatusTag3RunEb]+0x197): неопределённая ссылка на «grpc_call_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithSuccessTag::Set(grpc_call*, std::function<void (bool)>, grpc::internal::CompletionQueueTag*, bool)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallbackWithSuccessTag3SetEP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagEb[_ZN4grpc8internal22CallbackWithSuccessTag3SetEP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagEb]+0x52): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc8internal22CallbackWithSuccessTag3SetEP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagEb[_ZN4grpc8internal22CallbackWithSuccessTag3SetEP9grpc_callSt8functionIFvbEEPNS0_18CompletionQueueTagEb]+0x5e): неопределённая ссылка на «grpc_call_ref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithSuccessTag::Clear()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallbackWithSuccessTag5ClearEv[_ZN4grpc8internal22CallbackWithSuccessTag5ClearEv]+0x52): неопределённая ссылка на «grpc_call_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::CallbackWithSuccessTag::Run(bool)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal22CallbackWithSuccessTag3RunEb[_ZN4grpc8internal22CallbackWithSuccessTag3RunEb]+0x97): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::ClientCallbackUnaryImpl::operator delete(void*, unsigned long)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal23ClientCallbackUnaryImpldlEPvm[_ZN4grpc8internal23ClientCallbackUnaryImpldlEPvm]+0x41): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::ClientCallbackUnaryImpl::operator delete(void*, void*)»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal23ClientCallbackUnaryImpldlEPvS2_[_ZN4grpc8internal23ClientCallbackUnaryImpldlEPvS2_]+0x2e): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::internal::ClientCallbackUnaryImpl::MaybeFinish()»:
+service.grpc.pb.cc:(.text._ZN4grpc8internal23ClientCallbackUnaryImpl11MaybeFinishEv[_ZN4grpc8internal23ClientCallbackUnaryImpl11MaybeFinishEv]+0xd8): неопределённая ссылка на «grpc_call_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::ProtoBufferReader(grpc::ByteBuffer*)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReaderC2EPNS_10ByteBufferE[_ZN4grpc17ProtoBufferReaderC5EPNS_10ByteBufferE]+0xb8): неопределённая ссылка на «grpc_byte_buffer_reader_init»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::~ProtoBufferReader()»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReaderD2Ev[_ZN4grpc17ProtoBufferReaderD5Ev]+0x3e): неопределённая ссылка на «grpc_byte_buffer_reader_destroy»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::Next(void const**, int*)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader4NextEPPKvPi[_ZN4grpc17ProtoBufferReader4NextEPPKvPi]+0xeb): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader4NextEPPKvPi[_ZN4grpc17ProtoBufferReader4NextEPPKvPi]+0x12c): неопределённая ссылка на «grpc_byte_buffer_reader_peek»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader4NextEPPKvPi[_ZN4grpc17ProtoBufferReader4NextEPPKvPi]+0x1ce): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::BackUp(int)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader6BackUpEi[_ZN4grpc17ProtoBufferReader6BackUpEi]+0x68): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::ReadCord(absl::Cord*, int)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x139): неопределённая ссылка на «grpc_slice_split_tail»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x170): неопределённая ссылка на «absl::Cord::Append(absl::Cord&&)»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x26e): неопределённая ссылка на «grpc_slice_sub»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x2a9): неопределённая ссылка на «absl::Cord::Append(absl::Cord&&)»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x380): неопределённая ссылка на «grpc_byte_buffer_reader_peek»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x460): неопределённая ссылка на «grpc_slice_ref»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x495): неопределённая ссылка на «absl::Cord::Append(absl::Cord&&)»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x4ef): неопределённая ссылка на «grpc_slice_split_head»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x520): неопределённая ссылка на «absl::Cord::Append(absl::Cord&&)»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi[_ZN4grpc17ProtoBufferReader8ReadCordEPN4absl4CordEi]+0x59b): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferReader::MakeCordFromSlice(grpc_slice)::{lambda(std::basic_string_view<char, std::char_traits<char> >)#1}::operator()(std::basic_string_view<char, std::char_traits<char> >) const»:
+service.grpc.pb.cc:(.text._ZZN4grpc17ProtoBufferReader17MakeCordFromSliceE10grpc_sliceENKUlSt17basic_string_viewIcSt11char_traitsIcEEE_clES5_[_ZZN4grpc17ProtoBufferReader17MakeCordFromSliceE10grpc_sliceENKUlSt17basic_string_viewIcSt11char_traitsIcEEE_clES5_]+0x34): неопределённая ссылка на «grpc_slice_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferWriter::ProtoBufferWriter(grpc::ByteBuffer*, int, int)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriterC2EPNS_10ByteBufferEii[_ZN4grpc17ProtoBufferWriterC5EPNS_10ByteBufferEii]+0x90): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriterC2EPNS_10ByteBufferEii[_ZN4grpc17ProtoBufferWriterC5EPNS_10ByteBufferEii]+0x9f): неопределённая ссылка на «grpc_raw_byte_buffer_create»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferWriter::~ProtoBufferWriter()»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriterD2Ev[_ZN4grpc17ProtoBufferWriterD5Ev]+0x3b): неопределённая ссылка на «grpc_slice_unref»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferWriter::Next(void**, int*)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter4NextEPPvPi[_ZN4grpc17ProtoBufferWriter4NextEPPvPi]+0x61): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter4NextEPPvPi[_ZN4grpc17ProtoBufferWriter4NextEPPvPi]+0x14e): неопределённая ссылка на «grpc_slice_malloc»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter4NextEPPvPi[_ZN4grpc17ProtoBufferWriter4NextEPPvPi]+0x1e7): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter4NextEPPvPi[_ZN4grpc17ProtoBufferWriter4NextEPPvPi]+0x24c): неопределённая ссылка на «grpc_slice_buffer_add_indexed»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferWriter::BackUp(int)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter6BackUpEi[_ZN4grpc17ProtoBufferWriter6BackUpEi]+0x77): неопределённая ссылка на «gpr_assertion_failed»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter6BackUpEi[_ZN4grpc17ProtoBufferWriter6BackUpEi]+0x87): неопределённая ссылка на «grpc_slice_buffer_pop»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter6BackUpEi[_ZN4grpc17ProtoBufferWriter6BackUpEi]+0x12a): неопределённая ссылка на «grpc_slice_split_tail»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter6BackUpEi[_ZN4grpc17ProtoBufferWriter6BackUpEi]+0x16a): неопределённая ссылка на «grpc_slice_buffer_add»
+/usr/bin/ld: CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o: в функции «grpc::ProtoBufferWriter::WriteCord(absl::Cord const&)»:
+service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter9WriteCordERKN4absl4CordE[_ZN4grpc17ProtoBufferWriter9WriteCordERKN4absl4CordE]+0x119): неопределённая ссылка на «grpc_slice_from_copied_buffer»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter9WriteCordERKN4absl4CordE[_ZN4grpc17ProtoBufferWriter9WriteCordERKN4absl4CordE]+0x140): неопределённая ссылка на «grpc_slice_buffer_add»
+/usr/bin/ld: service.grpc.pb.cc:(.text._ZN4grpc17ProtoBufferWriter9WriteCordERKN4absl4CordE[_ZN4grpc17ProtoBufferWriter9Write

@@ -1,29 +1,12 @@
-#include <iostream>
-#include <json/json.h>
+/*#include <iostream>
+#include <fstream>
 #include <grpcpp/grpcpp.h>
+#include <jsoncpp/json/json.h>
+#include "proto/service.grpc.pb.h"  
+ 
 
-#include "my_service.grpc.pb.h"
-
-/*using grpc::Server;
-using grpc::ServerBuilder;
-using grpc::ServerContext;
-using grpc::Status;
-using my_package::MyService;
-using my_package::RequestMessage;
-using my_package::ResponseMessage;
-
-class MyServiceImpl final : public MyService::Service {
-  Status MyMethod(ServerContext* context, const RequestMessage* request, ResponseMessage* response) override {
-    std::string request_field = request->request_field();
-    std::string response_field = "Hello, " + request_field;
-    response->set_response_field(response_field);
-    return Status::OK;
-  }
-};
-
-}*/
 void readConfig(){
-  std::ifstream jsonFile("config.json");
+  std::ifstream jsonFile("config/config.json");
   Json::Value root;
   Json::Reader reader;
   bool parsingSuccessful = reader.parse(jsonFile, root);
@@ -36,8 +19,7 @@ void readConfig(){
   }
 }
 
-
-class KeepAliveServiceImpl final : public KeepAliveService::Service {
+class KeepAliveServiceImpl final : public KeepAliveService::Service { 
 public:
   grpc::Status KeepAlive(grpc::ServerContext* context, const Empty* request, Empty* response) override {
     std::cout << "Method called: keep_alive" << std::endl;
@@ -65,8 +47,70 @@ int main(int argc, char** argv) {
   server->Wait();
 
   return 0;
-}
+}*/
 
-//protoc -I <путь_к_файлу_proto> --grpc_out=<путь_для_генерации_кода> --plugin=protoc-gen-grpc=<путь_к_grpc_cpp_plugin> <путь_к_файлу_proto>
-//
-//g++ -std=c++11 service.pb.cc service.grpc.pb.cc main.cpp -o server `pkg-config --cflags --libs grpc++ grpc`
+
+#include <iostream>
+#include <fstream>
+#include <grpcpp/grpcpp.h>
+#include <memory>
+//#include <jsoncpp/json/json.h>
+
+#include "absl/flags/flag.h"
+#include "absl/flags/parse.h"
+#include "absl/strings/str_format.h"
+
+//ABSL_FLAG(uint16_t, port, 50051, "Server port for the service");
+
+#include "proto/service.grpc.pb.h" 
+
+using grpc::Server;
+using grpc::ServerBuilder;
+using grpc::ServerContext;
+using grpc::Status;
+//using package::KeepAliveRequest;
+//using package::KeepAliveResponse;
+using package::KeepAliveService;
+
+class KeepAliveServiceImpl final : public KeepAliveService::Service {
+public:
+
+  Status KeepAlive(ServerContext* context, const package::Empty* request, package::Empty* response) override {
+    std::cout << "Method called: keep_alive" << std::endl;
+        
+    return grpc::Status::OK;
+  }
+
+};
+/*
+void readConfig(){
+  std::ifstream jsonFile("config/config.json");
+  Json::Value root;
+  Json::Reader reader;
+  bool parsingSuccessful = reader.parse(jsonFile, root);
+  if (parsingSuccessful) {
+    std::string serverAddress = root["grpc"]["server_address"].asString();
+    int port = root["grpc"]["port"].asInt();
+    std::cout << "Configuration read: server_address = " << serverAddress << ", port = " << port << std::endl;
+    
+  } else {
+    std::cerr << "Error parsing JSON" << std::endl;
+  }
+}*/
+
+
+int main(int argc, char** argv) {
+
+  std::string server_address("0.0.0.0:50051");
+
+  KeepAliveServiceImpl service;
+  grpc::ServerBuilder builder;
+  builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
+  builder.RegisterService(&service);
+
+  std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
+  std::cout << "Server listening on " << server_address << std::endl;
+  server->Wait();
+
+  return 0;
+}
