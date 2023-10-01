@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++17 CMakeFiles/grpc_server.dir/service.pb.cc.o CMakeFiles/grpc_server.dir/proto/service.grpc.pb.cc.o CMakeFiles/grpc_server.dir/main.cpp.o -o grpc_server 

@@ -65,5 +65,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "*.inc": "cpp"
-    }
+    },
+    "editor.fontSize": 11
 }
