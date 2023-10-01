@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package package;
+package KeepAliveNs;
 
 service KeepAliveService {
   rpc KeepAlive(Empty) returns (Empty) {}
