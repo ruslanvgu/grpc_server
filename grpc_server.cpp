@@ -3,12 +3,13 @@
 #include <memory>
 #include <string>
 #include <fstream>
-
-#include <grpcpp/ext/proto_server_reflection_plugin.h>
-#include <grpcpp/grpcpp.h>
-#include <grpcpp/health_check_service_interface.h>
-
+#include <openssl/ssl.h>
+#include <openssl/pem.h>
 #include <jsoncpp/json/json.h> 
+
+#include <grpcpp/grpcpp.h>
+#include <grpcpp/ext/proto_server_reflection_plugin.h>
+#include <grpcpp/health_check_service_interface.h>
 
 #include "build/service.grpc.pb.h"   
 
@@ -53,7 +54,12 @@ int main(int argc, char** argv) {
   grpc::EnableDefaultHealthCheckService(true);
   grpc::reflection::InitProtoReflectionServerBuilderPlugin();
   grpc::ServerBuilder builder;
-  builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
+  grpc::SslServerCredentialsOptions sslOptions;
+  sslOptions.pem_root_certs = ""; // Путь к корневому сертификату
+
+  std::shared_ptr<grpc::ServerCredentials> server_creds = grpc::SslServerCredentials(sslOptions);
+  builder.AddListeningPort(server_address, server_creds);
+  //builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
   builder.RegisterService(&service);
 
   std::unique_ptr<grpc::Server> server(builder.BuildAndStart());

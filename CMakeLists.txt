@@ -8,9 +8,11 @@ find_package(protobuf CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 find_package(gRPC CONFIG REQUIRED)
 find_package(jsoncpp CONFIG REQUIRED)
+find_package(OpenSSL REQUIRED)
 
 include_directories(
-  "/home/ruslanvgu/.local/include"
+  "/include"
+  ${OPENSSL_INCLUDE_DIR}
  # "/usr/include"
 )
 #link_directories(
@@ -61,15 +63,6 @@ add_library(hw_grpc_proto
   ${hw_grpc_hdrs}
   ${hw_proto_srcs}
   ${hw_proto_hdrs})
-  
-#add_executable(grpc_server "grpc_server.cpp")
-#target_link_libraries(hw_grpc_proto
-  #  absl::flags
- #   absl::flags_parse
- # ${_REFLECTION}
- # ${_GRPC_GRPCPP}
- # ${_PROTOBUF_LIBPROTOBUF}
- # )
 
 # Targets greeter_[async_](client|server)
 foreach(_target grpc_server)
@@ -82,6 +75,7 @@ foreach(_target grpc_server)
     ${_GRPC_GRPCPP}
     ${_PROTOBUF_LIBPROTOBUF}
     jsoncpp_lib
+    ${OPENSSL_LIBRARIES}
     )
 endforeach()
 
