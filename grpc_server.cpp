@@ -3,8 +3,8 @@
 #include <memory>
 #include <string>
 #include <fstream>
-#include <openssl/ssl.h>
-#include <openssl/pem.h>
+//#include <openssl/ssl.h>
+//#include <openssl/pem.h>
 #include <jsoncpp/json/json.h> 
 
 #include <grpcpp/grpcpp.h>
@@ -54,12 +54,13 @@ int main(int argc, char** argv) {
   grpc::EnableDefaultHealthCheckService(true);
   grpc::reflection::InitProtoReflectionServerBuilderPlugin();
   grpc::ServerBuilder builder;
-  grpc::SslServerCredentialsOptions sslOptions;
+  /*grpc::SslServerCredentialsOptions sslOptions;
   sslOptions.pem_root_certs = ""; // Путь к корневому сертификату
 
   std::shared_ptr<grpc::ServerCredentials> server_creds = grpc::SslServerCredentials(sslOptions);
   builder.AddListeningPort(server_address, server_creds);
-  //builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
+  */
+  builder.AddListeningPort(server_address, grpc::InsecureServerCredentials());
   builder.RegisterService(&service);
 
   std::unique_ptr<grpc::Server> server(builder.BuildAndStart());
